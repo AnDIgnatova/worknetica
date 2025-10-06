@@ -1,70 +1,109 @@
-# Getting Started with Create React App
+English version
+HR Assistant — Landing / Early Access (React)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Short description
+HR Assistant is a responsive React landing site for an HR agency. The UI is in Russian and the app showcases job categories, a guided search flow, FAQ, an early-access signup form and a documents page. Built with Create React App and React Router.
 
-## Available Scripts
+Key features
+Landing (home) page composed from modular components:
+Hero / CTA (Early access)
+Professions / Job cards (sample job types with relevance)
+SearchFlow (step-by-step description of candidate search flows)
+FAQ section
+Early access sign-up form with consent checkbox
+Footer / Header
+Documents page with downloadable/visit-able document cards
+Client-side only — no backend/integration detected (forms are UI-only)
+Responsive layout with images and inline styles
+Tech stack
+React (package.json: react ^19.x)
+React Router (react-router-dom)
+Create React App (react-scripts)
+No backend dependencies included (static client app)
+Testing libraries present in dependencies (testing-library)
 
-In the project directory, you can run:
+Project structure (important files)
+/src
+  /components
+    Header.js
+    HeroSection.js
+    ProfessionsSection.js
+    SearchFlowSection.js
+    FAQSection.js
+    EarlyAccessForm.js
+    Footer.js
+    MainLayout.js
+  /pages
+    documents.js
+  App.js
+  index.js
+/public or assets inside src: many PNG/SVG images used by components
+package.json
+README.md (default Create React App)
 
-### `npm start`
+Routes
+/ — MainLayout (landing)
+/documents — Documents page
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+How to run (local)
+# clone
+git clone <repo-url>
+cd <repo-folder>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+# install
+npm install
 
-### `npm test`
+# start dev server
+npm start
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# build for production
+npm run build
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+HR Assistant — Лендинг / Форма раннего доступа (React)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Краткое описание
+HR Assistant — адаптивный лендинг для HR-агентства, реализованный на React. Интерфейс на русском. Содержит карточки профессий, блок с описанием этапов поиска кандидатов, FAQ, форму раннего доступа и страницу с документами.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Основные возможности
+Лэндинг, собранный из компонентов:
+Hero / CTA (получить ранний доступ)
+Блок профессий / карточки вакансий
+Поэтапный Search Flow (показ сценариев поиска)
+Раздел FAQ
+Форма «Ранний доступ» с согласием на обработку данных
+Шапка / подвал
+Страница документов (/documents)
+Интерактивность реализована на клиенте — нет подключённого бэкенда
+Адаптивная вёрстка, много изображений и inline-стилей
+Технологии
+React (в package.json указан react ^19)
+React Router (react-router-dom)
+Create React App (react-scripts)
+Тестовые библиотеки включены в зависимости (testing-library), но тесты, возможно, не реализованы
 
-### `npm run eject`
+Структура проекта (основное)
+/src
+  /components
+    Header.js
+    HeroSection.js
+    ProfessionsSection.js
+    SearchFlowSection.js
+    FAQSection.js
+    EarlyAccessForm.js
+    Footer.js
+    MainLayout.js
+  /pages
+    documents.js
+  App.js
+  index.js
+/assets (PNG/SVG изображения)
+package.json
+README.md (стандартный от CRA)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Маршруты
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+/ — Главная (MainLayout)
+/documents — Страница документов
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
